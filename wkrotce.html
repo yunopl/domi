@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wkrótce — Domi</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><text y=%2220%22 font-size=%2220%22>❄️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="snow-canvas" aria-hidden="true"></canvas>
+
+  <nav class="site-nav">
+    <a class="brand" href="index.html">Domi</a>
+    <div class="nav-links">
+      <a href="index.html" data-i18n="navHome">Start</a>
+      <a href="aktualizacje.html" data-i18n="navUpdates">Aktualizacje</a>
+      <a href="wkrotce.html" class="active" data-i18n="navSoon">Wkrótce</a>
+      <button class="lang-toggle" aria-label="Zmień język / Change language">EN</button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="placeholder-hero wrap">
+      <div class="panel" style="text-align:center;">
+        <svg class="frost-mark" viewBox="0 0 24 24" fill="none" stroke="#8fd6ff" stroke-width="1.4">
+          <path d="M12 2v20M4.5 6l15 12M19.5 6l-15 12M12 2l-2.5 2.5M12 2l2.5 2.5M12 22l-2.5-2.5M12 22l2.5-2.5M4.5 6l3.2.6M4.5 6l.6-3.2M19.5 6l-3.2.6M19.5 6l-.6-3.2M4.5 18l3.2-.6M4.5 18l.6 3.2M19.5 18l-3.2-.6M19.5 18l-.6 3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="eyebrow" data-i18n="soonEyebrow">W budowie</p>
+        <h2 data-i18n="soonTitle">Ta strona jeszcze marznie</h2>
+        <p data-i18n="soonBody">Coś tu się szykuje, ale jeszcze nie jest gotowe. Zajrzyj później.</p>
+        <p><a href="index.html" data-i18n="soonBack">Wróć na start</a> →</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-row">
+      <span data-i18n="footerNote">Zbudowane własnoręcznie, zimą.</span>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/snow.js"></script>
+</body>
+</html>
